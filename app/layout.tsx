@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Nosifer } from "next/font/google";
+import BackgroundSound from "@/components/shared/background-sound";
 
 const newNosifer = Nosifer({
   weight: "400",
@@ -19,7 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={`${newNosifer.className} antialiased`}>{children}</body>
+      <body className={`${newNosifer.className} antialiased`}>
+        {/* <BackgroundSound /> */}
+        {children}
+      </body>
     </html>
   );
 }

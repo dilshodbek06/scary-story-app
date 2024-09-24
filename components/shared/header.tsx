@@ -4,9 +4,9 @@ import Logo from "./logo";
 const Header = () => {
   return (
     <div className="min-h-[80px] flex items-center bg-gray-800 shadow-lg backdrop-blur-lg backdrop-filter bg-opacity-10 ">
-      <div className="container max-w-7xl  mx-auto flex items-center justify-between">
+      <div className="container px-2 max-w-7xl  mx-auto flex items-center justify-between">
         <Logo />
-        <ul className="list-none flex items-center gap-x-5">
+        <ul className="list-none items-center gap-x-5 hidden lg:flex">
           <li className="cursor-pointer hover:scale-105 hover:text-red-600 transition">
             Pricing
           </li>
